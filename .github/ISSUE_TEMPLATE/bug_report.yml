@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a problem with square-cli
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug! Please do **not** include your
+        Square access token or any other secrets in this report.
+  - type: input
+    id: version
+    attributes:
+      label: square-cli version
+      description: Output of `square-cli --version`
+      placeholder: v0.1.0 (commit …, built …)
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: The exact command you ran (redact any secrets).
+      render: shell
+      placeholder: square-cli payments create-payment --body '{ … }'
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include error output. Run with `-v` for request tracing.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS/arch, Go version (if building from source), sandbox or production.
+      placeholder: linux/amd64, sandbox
+    validations:
+      required: false

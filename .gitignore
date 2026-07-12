@@ -1,0 +1,27 @@
+# Binaries
+/bin/
+/dist/
+/square-cli
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test & coverage
+*.test
+*.out
+coverage.*
+
+# Generator debug output
+*.broken
+
+# Editor / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local config that may hold secrets
+config.yaml
+*.local.yaml

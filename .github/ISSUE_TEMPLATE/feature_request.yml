@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an improvement or new capability
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use case
+      description: What are you trying to do that square-cli doesn't support well today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work? Example commands are welcome.
+    validations:
+      required: false
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      description: Is this about the generated 1:1 API surface (L1) or higher-level convenience (L2)?
+      options:
+        - L1 (faithful API mirror)
+        - L2 (convenience / workflows)
+        - Not sure
+    validations:
+      required: false

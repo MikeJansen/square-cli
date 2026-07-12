@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Square API documentation
+    url: https://developer.squareup.com/reference/square
+    about: Questions about Square API behavior itself are best answered here.
+  - name: Square Developer Forums
+    url: https://developer.squareup.com/forums
+    about: For questions about Square accounts, credentials, or API semantics.
