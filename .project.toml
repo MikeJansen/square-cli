@@ -1,0 +1,13 @@
+# Project index entry, read by `projects` and `issues` (MikeJansen/projects).
+
+name = "square-cli"
+aliases = []
+description = "A comprehensive, generated command-line interface for the entire Square API. Scriptable, AI-friendly, one command per endpoint."
+# repo = "owner/name"   # detected from the origin remote
+
+[commands]
+# The one standard way to run ALL tests, from the project folder.
+test = "make test"
+
+[process]
+# lifecycle = true   # default: true when docs/process.md exists
